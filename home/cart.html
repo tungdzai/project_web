@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cart</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="topbar">
+		 <marquee behavior="" direction="">FREE SHIP CHO ĐƠN HÀNG TỪ 199K &nbsp &nbspFREE SHIP CHO ĐƠN HÀNG TỪ 199K &nbsp &nbspFREE SHIP CHO ĐƠN HÀNG TỪ 199K &nbsp &nbspFREE SHIP CHO ĐƠN HÀNG TỪ 199K</marquee>
+	</div>
+<!-- header -->
+	<div class="container-fluid">
+		<div class="row header">
+			<div class="col-lg-12 col-md-12 mx-auto row" style="align-items: center">
+				<div class="col-lg-1 col-md-1 ">
+					<img src="img/logo.jpg" alt="">
+				</div>
+				<div class="col-lg-9 col-md-9  d-none d-md-block d-lg-block text-center menu_area">
+					<ul>
+						<li>SẢN PHẨM
+							<ul class="dropdown">
+								<li>Áo-Quần</li>
+								<li>Balo-Túi sách</li>
+								<li>Phụ kiện</li>
+							</ul>
+						</li>
+						<li>Sale up to 75%
+							<ul class="dropdown">
+								<li>Sale phụ kiện</li>
+								<li>Sale áo sơ mi</li>
+								<li>Sale áo quần dài</li>
+							</ul>
+						</li>
+						<li>Địa chỉ STORE
+							<ul class="dropdown">
+								<li>Hà Đông</li>
+								<li>Thanh Xuân</li>
+								<li>Cầu giấy</li>
+							</ul>
+						</li>
+						<li>Hướng dẫn
+							<ul class="dropdown">
+								<li>Bảo quản sản phẩm</li>
+							</ul>
+						</li>
+						<li>Chính sách
+							<ul class="dropdown">
+								<li>Đổi trả 1:1</li>
+								<li>TK thanh toán</li>
+								<li>Bảo mật thông tin cá nhân</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 icon header_right text-center search_bar active">
+						<span><i class="fas fa-search search"></i>
+							<input type="text" name="img/" placeholder="Search...." class="text" >
+						</span>
+						<span><i class="fas fa-user acc "></i>
+							<form class="frm">
+								<h3>Đăng nhập tài khoản</h3>
+								<p>	Nhập email và mật khẩu của bạn</p>
+								  <div class="form-group">
+								    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+								  </div>
+								  <div class="form-group">
+								    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+								  </div>
+								  <div class="form-check">
+								    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+								    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+								  </div>
+								  <button type="submit" class="btn">ĐĂNG NHẬP</button>
+								<p>Khách hàng mới ? <a href="#" style="color: red">Tạo tài khoản</a></p>
+								<p>Quên mật khẩu ? <a href="#" style="color: red">Khôi phục mật khẩu</a></p>
+							</form>
+						</span>
+						<span><i class="fas fa-shopping-bag bag">
+							<div class="dot01">01</div>
+						</i></span>
+					<span class="bar"><i class="fas fa-bars d-inline-block d-md-none d-lg-none"></i></span>
+					<span class="close"><i class="fas fa-times d-inline-block d-md-none d-lg-none"></i></span>
+				</div>
+			</div>
+			<div class="menu_responsive d-md-none d-lg-none">
+				<ul>
+						<li><a href="#">SẢN PHẨM</a></li>
+						<li><a href="#">SALE UP TO 75%</a></li>
+						<li><a href="#">ĐỊA CHỈ STORE</a></li>
+						<li><a href="#">HƯỚNG DẪN </a></li>
+						<li><a href="#">CHÍNH SÁCH</a></li>
+				</ul>
+			</div>
+		</div>
+<!-- end header -->
+<!-- main -->
+		<div class="row row_cart">
+			<div class="text_cart col-lg-11 col-md-11 col-11 text-left ">
+				<h4>Giỏ hàng</h4>
+			</div>
+			<div class=" col-lg-11 col-md-11 col-11 item_cart row mx-auto">
+				<div class="cart_gh col-lg-9 col-md-9 col-12 row" style="padding: 0;">
+					<div class="cart_gh-left col-lg-12 col-md-12 col-12 row">
+						<div class="col-lg-5 col-md-5 col-5 ">
+							<div class="input-group">
+							  <span class="input-group-addon">
+							    <input type="checkbox" aria-label="Checkbox for following text input" id="checkall">
+							  </span>
+							  <p>Tất cả cản phẩm</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+							<p>Đơn giá </p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2 text-center" >
+							<p>Số lượng</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+							<p>Thành tiền</p>
+						</div>
+						<div class="col-lg-1 col-md-1 col-1">
+							<i class="fas fa-trash" style="color:#Aedcec"></i>
+						</div>
+					</div>
+					<div class="cart_gh-left col-lg-12 col-md-12 col-12 row">
+						<div class="col-lg-1 col-md-1 col-1" >
+							<div class="input-group">
+							  <span class="input-group-addon" >
+							    <input type="checkbox" aria-label="Checkbox for following text input">
+							  </span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-4 d-flex" style="padding: 0">
+							<div class="item_img col-lg-4 col-md-4 col-4" style="padding: 0">
+								<img src="img/aoThunBasic.webp" alt="" width="100%">
+							</div>
+							<div class="item_text col-lg-8 col-md-8 col-8">
+								<p>Áo thun basic</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2 number_cart">
+							<p>259.000đ</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+								<div class="center">
+						        <div class="input-group">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number minuss" disabled="disabled" data-type="minus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-minus">-</span>
+						              </button>
+						          </span>
+						          <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number pluss" data-type="plus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-plus">+</span>
+						              </button>
+						          </span>
+						      </div>
+						    </div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+						</div>
+						<div class="col-lg-1 col-md-1 col-1">
+							<i class="fas fa-trash" style="color:#Aedcec"></i>
+						</div>
+						<div class="col-lg-1 col-md-1 col-1" >
+							<div class="input-group">
+							  <span class="input-group-addon">
+							    <input type="checkbox" aria-label="Checkbox for following text input">
+							  </span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-4 d-flex" style="padding: 0">
+							<div class="item_img col-lg-4 col-md-4 col-4" style="padding: 0">
+								<img src="img/aoThunBasic.webp" alt="" width="100%">
+							</div>
+							<div class="item_text col-lg-8 col-md-8 col-8">
+								<p>Áo thun basic</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2 number_cart">
+							<p>259.000đ</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+								<div class="center">
+						        <div class="input-group">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number minuss" disabled="disabled" data-type="minus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-minus">-</span>
+						              </button>
+						          </span>
+						          <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number pluss" data-type="plus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-plus">+</span>
+						              </button>
+						          </span>
+						      </div>
+						    </div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+						</div>
+						<div class="col-lg-1 col-md-1 col-1">
+							<i class="fas fa-trash" style="color:#Aedcec"></i>
+						</div>
+						<div class="col-lg-1 col-md-1 col-1" >
+							<div class="input-group">
+							  <span class="input-group-addon">
+							    <input type="checkbox" aria-label="Checkbox for following text input">
+							  </span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-4 d-flex" style="padding: 0">
+							<div class="item_img col-lg-4 col-md-4 col-4" style="padding: 0">
+								<img src="img/aoThunBasic.webp" alt="" width="100%">
+							</div>
+							<div class="item_text col-lg-8 col-md-8 col-8">
+								<p>Áo thun basic</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2 number_cart">
+							<p>259.000đ</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+								<div class="center">
+						        <div class="input-group">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number minuss" disabled="disabled" data-type="minus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-minus">-</span>
+						              </button>
+						          </span>
+						          <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number pluss" data-type="plus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-plus">+</span>
+						              </button>
+						          </span>
+						      </div>
+						    </div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+						</div>
+						<div class="col-lg-1 col-md-1 col-1">
+							<i class="fas fa-trash" style="color:#Aedcec"></i>
+						</div>
+						<div class="col-lg-1 col-md-1 col-1" >
+							<div class="input-group">
+							  <span class="input-group-addon">
+							    <input type="checkbox" aria-label="Checkbox for following text input">
+							  </span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-4 d-flex" style="padding: 0">
+							<div class="item_img col-lg-4 col-md-4 col-4" style="padding: 0">
+								<img src="img/aoThunBasic.webp" alt="" width="100%">
+							</div>
+							<div class="item_text col-lg-8 col-md-8 col-8">
+								<p>Áo thun basic</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2 number_cart">
+							<p>259.000đ</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+								<div class="center">
+						        <div class="input-group">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number minuss" disabled="disabled" data-type="minus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-minus">-</span>
+						              </button>
+						          </span>
+						          <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number pluss" data-type="plus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-plus">+</span>
+						              </button>
+						          </span>
+						      </div>
+						    </div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+						</div>
+						<div class="col-lg-1 col-md-1 col-1">
+							<i class="fas fa-trash" style="color:#Aedcec"></i>
+						</div>
+						<div class="col-lg-1 col-md-1 col-1" >
+							<div class="input-group">
+							  <span class="input-group-addon">
+							    <input type="checkbox" aria-label="Checkbox for following text input">
+							  </span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-4 d-flex" style="padding: 0">
+							<div class="item_img col-lg-4 col-md-4 col-4" style="padding: 0">
+								<img src="img/aoThunBasic.webp" alt="" width="100%">
+							</div>
+							<div class="item_text col-lg-8 col-md-8 col-8">
+								<p>Áo thun basic</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2 number_cart">
+							<p>259.000đ</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+								<div class="center">
+						        <div class="input-group">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number minuss" disabled="disabled" data-type="minus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-minus">-</span>
+						              </button>
+						          </span>
+						          <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number pluss" data-type="plus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-plus">+</span>
+						              </button>
+						          </span>
+						      </div>
+						    </div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+						</div>
+						<div class="col-lg-1 col-md-1 col-1">
+							<i class="fas fa-trash" style="color:#Aedcec"></i>
+						</div>
+						<div class="col-lg-1 col-md-1 col-1" >
+							<div class="input-group">
+							  <span class="input-group-addon">
+							    <input type="checkbox" aria-label="Checkbox for following text input">
+							  </span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-4 d-flex" style="padding: 0">
+							<div class="item_img col-lg-4 col-md-4 col-4" style="padding: 0">
+								<img src="img/aoThunBasic.webp" alt="" width="100%">
+							</div>
+							<div class="item_text col-lg-8 col-md-8 col-8">
+								<p>Áo thun basic</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2 number_cart">
+							<p>259.000đ</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+								<div class="center">
+						        <div class="input-group">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number minuss" disabled="disabled" data-type="minus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-minus">-</span>
+						              </button>
+						          </span>
+						          <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number pluss" data-type="plus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-plus">+</span>
+						              </button>
+						          </span>
+						      </div>
+						    </div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+						</div>
+						<div class="col-lg-1 col-md-1 col-1">
+							<i class="fas fa-trash" style="color:#Aedcec"></i>
+						</div>
+						<div class="col-lg-1 col-md-1 col-1" >
+							<div class="input-group">
+							  <span class="input-group-addon">
+							    <input type="checkbox" aria-label="Checkbox for following text input">
+							  </span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-4 d-flex" style="padding: 0">
+							<div class="item_img col-lg-4 col-md-4 col-4" style="padding: 0">
+								<img src="img/aoThunBasic.webp" alt="" width="100%">
+							</div>
+							<div class="item_text col-lg-8 col-md-8 col-8">
+								<p>Áo thun basic</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2 number_cart">
+							<p>259.000đ</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+								<div class="center">
+						        <div class="input-group">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number minuss" disabled="disabled" data-type="minus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-minus">-</span>
+						              </button>
+						          </span>
+						          <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number pluss" data-type="plus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-plus">+</span>
+						              </button>
+						          </span>
+						      </div>
+						    </div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+						</div>
+						<div class="col-lg-1 col-md-1 col-1">
+							<i class="fas fa-trash" style="color:#Aedcec"></i>
+						</div>
+						<div class="col-lg-1 col-md-1 col-1" >
+							<div class="input-group">
+							  <span class="input-group-addon">
+							    <input type="checkbox" aria-label="Checkbox for following text input">
+							  </span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-4 d-flex" style="padding: 0">
+							<div class="item_img col-lg-4 col-md-4 col-4" style="padding: 0">
+								<img src="img/aoThunBasic.webp" alt="" width="100%">
+							</div>
+							<div class="item_text col-lg-8 col-md-8 col-8">
+								<p>Áo thun basic</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2 number_cart">
+							<p>259.000đ</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+								<div class="center">
+						        <div class="input-group">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number minuss" disabled="disabled" data-type="minus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-minus">-</span>
+						              </button>
+						          </span>
+						          <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number pluss" data-type="plus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-plus">+</span>
+						              </button>
+						          </span>
+						      </div>
+						    </div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+						</div>
+						<div class="col-lg-1 col-md-1 col-1">
+							<i class="fas fa-trash" style="color:#Aedcec"></i>
+						</div>
+						<div class="col-lg-1 col-md-1 col-1" >
+							<div class="input-group">
+							  <span class="input-group-addon">
+							    <input type="checkbox" aria-label="Checkbox for following text input">
+							  </span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-4 d-flex" style="padding: 0">
+							<div class="item_img col-lg-4 col-md-4 col-4" style="padding: 0">
+								<img src="img/aoThunBasic.webp" alt="" width="100%">
+							</div>
+							<div class="item_text col-lg-8 col-md-8 col-8">
+								<p>Áo thun basic</p>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2 number_cart">
+							<p>259.000đ</p>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+								<div class="center">
+						        <div class="input-group">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number minuss" disabled="disabled" data-type="minus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-minus">-</span>
+						              </button>
+						          </span>
+						          <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+						          <span class="input-group-btn">
+						              <button type="button" class="btn btn-default btn-number pluss" data-type="plus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-plus">+</span>
+						              </button>
+						          </span>
+						      </div>
+						    </div>
+						</div>
+						<div class="col-lg-2 col-md-2 col-2">
+						</div>
+						<div class="col-lg-1 col-md-1 col-1">
+							<i class="fas fa-trash"style="color:#Aedcec"></i>
+						</div>
+					</div>
+				</div>
+				<div class="cart-tt col-lg-3 col-md-3 col-12" style="padding: 0;">
+					<div class="cart_dc col-lg-12 col-md-12 col-12">
+						<div class="d-flex ct_text">
+							<h4>Giao tới</h4>
+							<p>Thay đổi</p>
+						</div>
+						<div class="cart-ttkh d-flex">
+							<h6>Việt Tùng</h6>
+							<p>033.446.3900</p>
+						</div>
+						<p>57 ngách 67/61 Phùng Khoang, Phường Trung Văn, Quận Nam Từ Liêm, Hà Nội</p>
+					</div>
+					<div class="cart_money col-lg-12 col-md-12 col-12">
+						<div class="tamTinh d-flex">
+							<p>Tạm tính</p>
+							<p>0đ</p>
+						</div>
+						<div class="sales d-flex">
+							<p>Giảm giá</p>
+							<p>0đ</p>
+						</div>
+						<div class="sum d-flex">
+							<span>Tổng tiền </span>
+							<p>Vui lòng chọn sản phẩm</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- back to top -->
+		<div id="back-to-top">
+			<i class="fas fa-angle-double-up"></i>
+		</div>
+		<!-- footer -->
+		<div class="row" id="row12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="80">
+			<div class="col-lg-10 col-md-12 col-12 mx-auto row">
+				<div class="col-lg-3 col-md-5 col-12">
+					<h3>Công ti cổ phần thời trang Men Style Việt Nam</h3>
+					<p>Lorem ipsum dolor sit amet, consecl adipisicing elit, sed do eiusmod teml incididunt ut labore et dolore magna aliqua Ut enim</p>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-tumblr"></i>
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-instagram"></i>
+				</div>
+				<div class="col-lg-2 col-md-3 col-12">
+					<h6>Chính sách <span class="plus d-md-none d-lg-none"><i class="fas fa-plus"></i></span><span class="minus d-md-none d-lg-none"><i class="fas fa-minus"></i></span></h6>
+					<ul class=" d-md-block d-lg-block ">
+						<li><a href="">Chính sách đổi trả </a></li>
+						<li><a href="">Tài khoản thanh toán </a></li>
+						<li><a href="">Kiểm tra đơn hàng </a></li>
+						<li><a href="">Bảo mật thông tin cá nhân</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-3 col-12">
+					<h6>Cửa hàng <span class="plus d-md-none d-lg-none"><i class="fas fa-plus"></i></span><span class="minus d-md-none d-lg-none"><i class="fas fa-minus"></i></span></h6>
+					<ul class=" d-md-block d-lg-block">
+						<li><a href="#">HÀ ĐÔNG</a></li>
+						<li><a href="#">THANH XUÂN</a></li>
+						<li><a href="#">CẦU GIẤY</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-5 col-12">
+					<h6>Tư vấn bán hàng <span class="plus d-md-none d-lg-none"><i class="fas fa-plus"></i></span><span class="minus d-md-none d-lg-none"><i class="fas fa-minus"></i></span></h6>
+					<ul class=" d-md-block d-lg-block">
+						<li><a href="">0334463900</a></li>
+						<li><a href="">Tất cả các ngày trong tuần </a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-7 col-12">
+					<h6>Chăm sóc khách hàng  <span class="plus d-md-none d-lg-none"><i class="fas fa-plus"></i></span><span class="minus d-md-none d-lg-none"><i class="fas fa-minus"></i></span></h6>
+					<ul class="widget-contact-info d-md-block d-lg-block">
+                  		<li>Phone/Fax: <a href="tel://0334463900">0334463900</a></li>
+                  		<li>Email: <a href="mailto://tungnguyen0603202@gmail.com">tunnguyen0603202@gmail.com</a></li>
+                	</ul>
+                	
+				</div>
+			</div>
+		</div>
+		<div class="row" id="footer">
+			<div class="col-lg-10 mx-auto text-center">
+				<p><i class="fa fa-copyright"></i> 2022 <span>MEN STYLE. </span> Made with <i class="fa fa-heart text-danger"></i> by VIETTUNG</p>
+			</div>
+		</div>
+		<!-- end footer -->
+	</div>
+	
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</body>
+</html>
+

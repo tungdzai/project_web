@@ -1,0 +1,289 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+body{
+	font-family:  "Fredoka One", cursive;
+}
+/*header*/
+.topbar{
+	background-color: #e85205;
+	color: #000;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 16px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: 600;
+}
+/*search*/
+.search_bar{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.search_bar span{
+	background-color: aliceblue;
+	padding: 5px;
+	border-radius: 50px;
+}
+.search{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	max-width: 100%;
+	cursor: pointer;
+	position: relative;
+
+}
+
+.search_bar i{
+	padding: 5px;
+}
+.text{
+	display: none;
+	margin-left:-100px;
+	background-color: transparent;
+	border:1px solid #000;
+	border-radius: 50px;
+	outline: none;
+	position: absolute;
+	z-index: 2;
+	padding: 5px;
+}
+
+/*menu*/
+.menu_area > ul{
+	color: black;
+	display: flex;
+	justify-content: space-between;
+}
+.menu_area > ul>li{
+	position: relative;
+	cursor: pointer;
+}
+.dropdown{
+	position: absolute;
+	top: 100%;
+	padding: 20px 0;
+	z-index: 1;
+}
+.dropdown li{
+	background: #FFFFFF;
+	display: none;
+}
+.dropdown li:hover{
+	background:#e85205;
+	color: #FFFFFF; 
+	
+}
+.menu_area li:hover > .dropdown li{
+	display: block;
+	width: 200px;
+	height: 50px;
+	padding: 10px;
+}
+
+.menu_area li:hover > .dropdown li{
+	transform-origin: top center;
+	opacity: 0;
+}
+.menu_area li:hover > .dropdown li:nth-child(1){
+	animation: animate 300ms ease-in-out forwards;
+	animation-delay: -150ms;
+}
+.menu_area li:hover > .dropdown li:nth-child(2){
+	animation: animate 300ms ease-in-out forwards;
+	animation-delay: 0ms;
+}
+.menu_area li:hover > .dropdown li:nth-child(3){
+	animation: animate 300ms ease-in-out forwards;
+	animation-delay: 150ms;
+}
+@keyframes animate{
+	0%{
+		opacity: 0;
+		transform: rotateX(-90deg);
+	}
+	50%{
+		transform: rotateX(20deg);
+	}
+	100%{
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+}
+.header{
+	background-color: #fcfcfc;
+}
+.header img{
+	width: 100%;
+	height: 100%;
+	
+}
+.menu li{
+	display: inline-block;
+	padding-top: 10px;
+}
+.btn{
+	background-color: #fcfcfc;
+	color: #000;
+	border: none;
+
+}
+.bar{
+		display: inline-block;
+}
+.close{
+		display: none;
+		color: #FF0000;
+}
+.close i{
+		padding-left: 16px;
+}
+.r2_right{
+	padding: 10px;
+}
+.r2_right i{
+	padding: 10px;
+}
+.bag{
+		position: relative;
+}
+.dot01{
+	padding-top: 1px;
+	position: absolute;
+	top: -5px;
+	right: -12px;
+	width: 17px;
+	height: 17px;
+	display: flex;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #ed7989;
+	font-size: 10px;
+	font-weight: 100;
+	color: #ffffff;
+}
+
+.menu_responsive{
+		position: absolute;
+		top: 252px;
+		left: 0;
+		z-index: 7;
+		text-align: left;
+		background-color: rgba(0,0,0,0.8) !important;
+		display: block;
+		width: 100%;
+		display: none;
+}
+.menu_responsive ul li{
+		padding: 20px 10px;
+		display: block;
+		border-bottom: 1px solid #ccc;
+}
+.menu_responsive ul li:hover{
+		background-color: #ccc;
+	
+}
+.menu_responsive ul li:hover a{
+		color: #000000;
+}
+.menu_responsive ul li a{
+		display: block;
+		color: #ffffff;
+}
+.menu_responsive ul{
+		padding: 20px 0 0px 0;
+		margin-bottom: 0;
+} 
+@media screen and (min-width: 320px) and (max-width: 767px){
+	.header img{
+		width: 0;
+	}
+	.menu_responsive{
+		top: 95px;
+	}
+}	
+/*footer*/
+#row12 h6{
+	font-weight: 900;
+	padding: 40px 0 30px 0;
+}
+#row12 li{
+	padding: 5px 0;
+}
+#row12 li a{
+	color:#000;
+}
+#row12 li:hover a{
+	color:  #e85205;
+}
+#row12 i{
+	font-size: 12px;
+	padding-right: 20px;
+}
+#footer{
+	background-color: #212121;
+	padding: 20px 0 0px;
+	color: #ffffff;
+}
+#footer span{
+	color: #f379a7;
+}
+#row12 i:hover{
+	color: #e85205;
+}
+.plus{
+		display: inline-block;
+}
+.minus{
+		display: none;
+}
+/*main*/
+.banner img{
+	width: 100%;
+}
+.text_new {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.text_new h4{
+	font-weight: 600;
+}
+.card-block{
+	padding: 10px;
+}
+.card{
+	margin-bottom: 10px;
+}
+.paging_new{
+	margin-top: 20px;
+}
+.pagination {
+	justify-content: center;
+}
+.row8{
+	background: #d3eaf2;
+	margin: 80px 0;
+}
+.row8 img{
+	width: 100%;
+}
+.r8_tks{
+	position: relative;
+}
+.check-mail {
+	margin: 90px 0;
+	display: flex;
+	align-items: center;
+}
+.card a{
+	text-decoration: none;
+	color: #000;
+}
