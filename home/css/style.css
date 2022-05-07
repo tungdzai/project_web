@@ -570,6 +570,13 @@ strike{
 	.cart-ttkh h6 {
     	padding: 0px;
 	}
+	.media-body h6{
+		font-size: 12px;
+	}
+	.media-body p{
+		font-size: 10px;
+	}
+
 }
 @media screen and (min-width: 320px) and (max-width: 400px){
 	.item_cart{
@@ -592,7 +599,65 @@ strike{
 	.input-group-btn{
 		width: 40%;
 	}
+	.blog_home{
+		display: none;
+	}
+	.check-mail >form{
+		text-align: center;
+	}
+	.check-mail >form>input {
+		margin-bottom: 20px;
+		outline: none;
+		padding: 2px;
+	}
 }
 .item_cart {
 	margin-bottom: 40px;
-}		
+}	
+.media-body{
+	margin-left: 10px;
+	width: 50%;
+}	
+.media{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #000;
+}
+.media img{
+	width: 45%;
+}
+.r6_blog_top {
+	margin: 80px 0;
+}
+.r6_search input{
+	width: 100%;
+	margin-right: 10px;
+	outline: none;
+	padding: 3px;
+	border-radius: 5px;
+	border: 1px solid #e85205;
+}
+.r6_search i{
+	padding: 6px;
+	color: #e85205;
+}
+
+.r6_search{
+	padding: 0;
+	margin-bottom: 20px;
+	display: flex;
+
+}
+.blog_home .card img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.blog_home .card-block h5{
+	font-size: 11px;
+	font-weight: 600;
+
+
+}
+.blog_home .card-block span{
+	font-size: 11px;
+	font-weight: 100;
+}
